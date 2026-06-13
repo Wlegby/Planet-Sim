@@ -24,7 +24,7 @@ const G: f64 = 6.6743e-8 as f64;
 
 #[macroquad::main("Gravity Sim")]
 async fn main() {
-    let mut settings = Setting::unrealistic();
+    let mut settings = Setting::realistic();
 
     let mut planets = solar_system(&settings);
 
